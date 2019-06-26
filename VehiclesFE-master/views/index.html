@@ -1,0 +1,96 @@
+<head>
+<meta charset="UTF-8">	
+<script src="../models/car.js"></script>
+<script src="../models/wheel.js"></script>
+<script src="../controllers/controller.js"></script>
+ <link rel="stylesheet" href="style.css" type="text/css" media="all">
+</head>
+<body>
+	<h1>Ejercicio de Vehículos</h1>
+  <form id="carInfo">
+    <div class="three-columns">
+      <p id="carPlate">
+        <label>Plate</label> <br>
+   	  	<input type="text" name="plate" id="matricula" class="textInput">
+      </p>
+      <p id="carBrand">
+				<label>Brand</label> <br>
+   	  	<input type="text" name="brand" id="marca" class="textInput">            
+   	  </p>
+   	  <p id="carColor">
+			  <label>Color</label> <br>
+				<input type="text" name="color" id="culor" class="textInput">  	
+    	</p>
+    </div> 	
+  </form> 
+  <button onclick="ocultar()">Add Wheels</button>
+  <form id="wheelInfo">
+    <div class="four-columns">
+      <p id="brandWheel1">
+        <label>Marca Rueda 1</label> <br>
+        <input type="text" name="marcarueda1" id="rueda1" class="textInput">
+      </p>
+      <p id="Diameter1">
+        <label>Diámetro Rueda 1</label> <br>
+        <input type="text" name="diametrueda1" id="diameter1" class="textInput">            
+      </p>
+      <p id="brandWheel2">
+        <label>Marca Rueda 2</label> <br>
+        <input type="text" name="marcarueda2" id="rueda2" class="textInput">   
+      </p>
+      <p id="Diameter2">
+        <label>Diámetro Rueda 2</label> <br>
+        <input type="text" name="diametrueda2" id="diameter2" class="textInput">
+      </p>
+      <p id="brandWheel3">
+        <label>Marca Rueda 3</label> <br>
+        <input type="text" name="marcarueda3" id="rueda3" class="textInput">            
+      </p>
+      <p id="Diameter3">
+        <label>Diámetro Rueda 3</label> <br>
+        <input type="text" name="diametrueda3" id="diameter3" class="textInput">   
+      </p>
+       <p id="brandWheel4">
+        <label>Marca Rueda 4</label> <br>
+        <input type="text" name="marcarueda4" id="rueda4" class="textInput">            
+      </p>
+      <p id="Diameter4">
+        <label>Diámetro Rueda 4</label> <br>
+        <input type="text" name="diametrueda4" id="diameter4" class="textInput">   
+      </p>
+    </div>   
+</form> 
+<button onclick="createCar()">Create Car</button>
+    <div id="createdCar" class="three-columns">
+      <p>
+        <div id="carHead"></div><br>
+        <div id="plate"></div>
+      </p>
+      <p>
+        <br>
+        <div id="brand"></div>            
+      </p>
+      <p>
+        <br>
+        <div id="color"></div>            
+      </p>
+    </div>
+    <div id="createdCar" class="four-columns">
+      <p>
+        <div id="wheelHead"></div><br>
+        <div id="wheel1"></div>
+      </p>
+      <p>
+        <br>
+        <div id="wheel2"></div>            
+      </p>
+      <p>
+        <br>
+        <div id="wheel3"></div>            
+      </p>
+      <p>
+        <br>
+        <div id="wheel4"></div>            
+      </p>
+    </div>      
+</body>
